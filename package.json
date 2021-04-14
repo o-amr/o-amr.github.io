@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "docs": "serve ./docs"
+    "serve": "docsify serve ./docs"
   },
   "dependencies": {
-    "serve": "^11.3.2"
+    "docsify-cli": "^4.4.3"
   }
 }
