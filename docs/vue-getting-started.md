@@ -14,15 +14,26 @@ $ vue -V
 ```
 Установка Vue CLI производится единожды для конкретной машины.
 
+## Особенности работы в VS Code и WebStorm
+
+VS Code не имеет встроенной поддержки Vue.js, поэтому для подсветки синтаксиса, форматирования и автодополнения кода 
+требуется установить плагин [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur).
+
+WebStorm имеет встроенную поддержку Vue.js, поэтому никаких дополнительных действий не требуется.
+
 ## Создание нового проекта
 
-Переходим в каталог, в котором хранятся проекты, и инициализируем новый проект:
+Переходим в каталог, в котором хранятся проекты, и инициализируем новый проект с помощью командной строки:
 ```shell
 $ vue create project-name
 ```
+WebStorm позволяет запустить инициализацию проекта, не используя командную строку. Выберите `File ➔ New ➔ Project...`, 
+затем в появившемся диалоговом окне выберите `Vue.js`, снимите галочку `Use the default project setup (babel, eslint)` и
+нажмите кнопку `Create`.
+
 После этого запустится Vue CLI, который в виде опросника позволит сконфигурировать проект.
 
-Выбираем с помощью стрелок *Manually select features*:
+Выбираем с помощью стрелок `Manually select features`:
 ```sh
 Vue CLI v4.5.12
 ? Please pick a preset:
@@ -46,7 +57,7 @@ Vue CLI v4.5.12
   ( ) Unit Testing
   ( ) E2E Testing
 ```
-Выбираем версию 2.x:
+Выбираем версию `2.x`:
 ```sh
 Vue CLI v4.5.12
 ? Please pick a preset: Manually select features
@@ -55,7 +66,7 @@ Vue CLI v4.5.12
 > 2.x
   3.x (Preview)
 ```
-Отказываемся от использования *class-style* синтаксиса:
+Отказываемся от использования `class-style` синтаксиса:
 ```sh
 Vue CLI v4.5.12
 ? Please pick a preset: Manually select features
@@ -72,7 +83,7 @@ Vue CLI v4.5.12
 ? Use class-style component syntax? No
 ? Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpiling JSX)? (Y/n) y
 ```
-Используем *history mode* для *Router*, это убрать символ # из адреса:
+Используем `history mode` для `Router`, это убрать символ # из адреса:
 ```sh
 Vue CLI v4.5.12
 ? Please pick a preset: Manually select features
@@ -82,7 +93,7 @@ Vue CLI v4.5.12
 ? Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpiling JSX)? Yes
 ? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) y
 ```
-Выбираем *Sass/SCSS (with dart-sass)*:
+Выбираем `Sass/SCSS (with dart-sass)`:
 ```sh
 Vue CLI v4.5.12
 ? Please pick a preset: Manually select features
@@ -97,7 +108,7 @@ Vue CLI v4.5.12
   Less
   Stylus
 ```
-Выбираем *ESLint + Airbnb config*:
+Выбираем `ESLint + Airbnb config`:
 ```sh
 Vue CLI v4.5.12
 ? Please pick a preset: Manually select features
@@ -174,7 +185,7 @@ $ yarn serve
 ```shell
 $ yarn build
 ```
-После этого собранный проект можно найти в каталоге *dist*.
+После этого собранный проект можно найти в каталоге `dist`.
 
 Если проект был клонирован из репозитория или список зависимостей изменялся другим разработчиком, 
 то перед запуском или сборкой необходимо установить/обновить зависимости в каталоге проекта:
