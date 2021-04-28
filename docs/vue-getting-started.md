@@ -29,6 +29,20 @@ WebStorm имеет встроенную поддержку Vue.js, поэтом
 ```shell
 $ vue create --preset o-amr/preset-vue project-name
 ```
+Данный шаблон содержит:
+- [Vue2](https://ru.vuejs.org/index.html)
+- [Vue Router](https://router.vuejs.org/ru/)
+- [Vuex](https://vuex.vuejs.org/ru/)
+- [Babel](https://babeljs.io/)
+- [TypeScript](https://www.typescriptlang.org/) 
+- [ESLint](https://eslint.org/) c конфигурацией Airbnb
+- [Dart Sass](https://sass-lang.com/dart-sass)
+- [Vuetify](https://vuetifyjs.com/en/)
+- Шрифт [Roboto](https://fonts.google.com/specimen/Roboto)
+- Иконки [MDI](https://materialdesignicons.com/)
+
+Babel, TypeScript, ESLint добавлены с помощью плагинов Vue CLI. Информацию о конфигурации плагинов можно найти
+в документации по [Vue CLI](https://cli.vuejs.org/ru/core-plugins/).
 
 ### Вручную
 
