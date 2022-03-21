@@ -1,2 +1,3 @@
-- [Приступаем к работе](getting-started.md)
-- [Начало работы с Vue](vue-getting-started.md)
+- [Приступаем к работе c Node.js и Vue.js](node-getting-started)
+- [Начало работы с Vue2](vue2-getting-started)
+- [Организация Git-репозиториев](repo)

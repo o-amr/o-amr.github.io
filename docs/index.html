@@ -12,17 +12,20 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      repo: 'o-amr/o-amr.github.io',
-      basePath: '/',
+      name: '<a id="logo-link" data-nosearch href="/">' +
+              '<div style="display: flex; flex-direction: row; align-items: center; padding: 0 25px; justify-content: space-between">' +
+              '<img src="assets/logo.png" height="60px" alt="logo">' +
+              '<span>Отделение АМР</span>' +
+              '</div></a>',
+      nameLink: false,
+      relativePath: true,
+      auto2top: true,
+      repo: '',
+      loadFooter: true,
       loadSidebar: true,
-      toc: {
-        scope: '.markdown-section',
-        headings: 'h1, h2, h3, h4, h5, h6',
-        title: 'Содержание',
-      },
       maxLevel: 4,
       subMaxLevel: 3,
-      themeColor: '#4d6c99'
+      themeColor: '#e93325',
     }
   </script>
   <!-- Docsify v4 -->
